@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: x-lattice-slsqp-api
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/health
+    envVars:
+      - key: ALLOW_ORIGINS
+        value: "*"
